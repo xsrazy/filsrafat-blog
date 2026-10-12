@@ -1,7 +1,0 @@
-title: Filsrafat
-description: "Bukan motivator. Cuma orang yang kebanyakan mikir."
-url: "https://xsrazy.github.io"
-baseurl: "/filsrafat-blog"
-lang: id
-markdown: kramdown
-permalink: /:year/:month/:day/:title/
