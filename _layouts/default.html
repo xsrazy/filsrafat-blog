@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ '/' | relative_url }}">Filsrafat</a>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Beranda</a>
+        <a href="{{ '/tentang/' | relative_url }}">Tentang</a>
+      </nav>
+    </div>
+    <p class="tagline">{{ site.description }}</p>
+  </header>
+  <main class="wrap content">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Filsrafat &mdash; mikirin hidup lewat kata-kata para filsuf.</p>
+    </div>
+  </footer>
+</body>
+</html>
